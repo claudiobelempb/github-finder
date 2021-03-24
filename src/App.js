@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './components/layout/NavBar';
-import { UserItem } from './components/users/UserItem';
+import { Users } from './components/users/Users';
 
 import './App.css';
 
@@ -12,7 +12,9 @@ class App extends Component {
     return (
       <>
         <NavBar />
-        <UserItem />
+        <div className={'container'}>
+          <Users />
+        </div>
         {/* {loading ? <h4>Loading...</h4> : <h1>Hello {showName && name}</h1>} */}
       </>
     );
