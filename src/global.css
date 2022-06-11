@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 /* Global Styles */
 :root {
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -49,57 +49,62 @@ img {
 }
 
 /* Text Styles*/
-.x-large {
-  font-size: 4rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
 
-.large {
+.text__large {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
-.lead {
+.text__xlarge {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.text__lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.text-center {
+.text__center {
   text-align: center;
 }
 
-.text-primary {
+.text__primary {
   color: var(--primary-color);
 }
 
-.text-dark {
+.text__dark {
   color: var(--dark-color);
 }
 
-.text-success {
+.text__success {
   color: var(--success-color);
 }
 
-.text-danger {
+.text__danger {
   color: var(--danger-color);
 }
 
-.text-center {
-  text-align: center;
-}
-
-.text-right {
+.text__right {
   text-align: right;
 }
 
-.text-left {
+.text__left {
   text-align: left;
 }
 
+.text__uppercase {
+  text-transform: uppercase;
+}
+
+.text__lowercase {
+  text-transform: lowercase;
+}
+
 /* Center All */
-.all-center {
+.box__center {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -129,25 +134,25 @@ img {
 .p {
   padding: 0.5rem;
 }
-.p-1 {
+.p__1 {
   padding: 1rem;
 }
-.p-2 {
+.p__2 {
   padding: 2rem;
 }
-.p-3 {
+.p__3 {
   padding: 3rem;
 }
 .py {
   padding: 0.5rem 0;
 }
-.py-1 {
+.py__1 {
   padding: 1rem 0;
 }
-.py-2 {
+.py__2 {
   padding: 2rem 0;
 }
-.py-3 {
+.py__3 {
   padding: 3rem 0;
 }
 
@@ -155,42 +160,42 @@ img {
 .m {
   margin: 0.5rem;
 }
-.m-1 {
+.m__1 {
   margin: 1rem;
 }
-.m-2 {
+.m__2 {
   margin: 2rem;
 }
-.m-3 {
+.m__3 {
   margin: 3rem;
 }
 .my {
   margin: 0.5rem 0;
 }
-.my-1 {
+.my__1 {
   margin: 1rem 0;
 }
-.my-2 {
+.my__2 {
   margin: 2rem 0;
 }
-.my-3 {
+.my__3 {
   margin: 3rem 0;
 }
 
 /* Grid */
-.grid-2 {
+.grid__2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
 }
 
-.grid-3 {
+.grid__3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 
-.grid-4 {
+.grid__4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
@@ -207,20 +212,21 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  border-radius: 0.3rem;
 }
 
-.btn-link {
+.btn__link {
   background: none;
   padding: 0;
   margin: 0;
 }
 
-.btn-block {
+.btn__block {
   display: block;
   width: 100%;
 }
 
-.btn-sm {
+.btn__sm {
   font-size: 0.8rem;
   padding: 0.3rem 1rem;
   margin-right: 0.2rem;
@@ -245,50 +251,50 @@ img {
   color: #333;
 }
 
-.btn-primary,
-.bg-primary,
-.badge-primary,
-.alert-primary {
+.btn__primary,
+.bg__primary,
+.badge__primary,
+.alert__primary {
   background: var(--primary-color);
   color: #fff;
 }
 
-.btn-light,
-.bg-light,
-.badge-light,
-.alert-light {
+.btn__light,
+.bg__light,
+.badge__light,
+.alert__light {
   background: var(--light-color);
   color: #333;
 }
 
-.btn-dark,
-.bg-dark,
-.badge-dark,
-.alert-dark {
+.btn__dark,
+.bg__dark,
+.badge__dark,
+.alert__dark {
   background: var(--dark-color);
   color: #fff;
 }
 
-.btn-danger,
-.bg-danger,
-.badge-danger,
-.alert-danger {
+.btn__danger,
+.bg__danger,
+.badge__danger,
+.alert__danger {
   background: var(--danger-color);
   color: #fff;
 }
 
-.btn-success,
-.bg-success,
-.badge-success,
-.alert-success {
+.btn__success,
+.bg__success,
+.badge__success,
+.alert__success {
   background: var(--success-color);
   color: #fff;
 }
 
-.btn-white,
-.bg-white,
-.badge-white,
-.alert-white {
+.btn__white,
+.bg__white,
+.badge__white,
+.alert__white {
   background: #fff;
   color: #333;
   border: #ccc solid 1px;
@@ -298,12 +304,12 @@ img {
   opacity: 0.8;
 }
 
-.bg-light,
-.badge-light {
+.bg__light,
+.badge__light {
   border: #ccc solid 1px;
 }
 
-.round-img {
+.round__img {
   border-radius: 50%;
 }
 
@@ -312,16 +318,16 @@ input {
   margin: 1.2rem 0;
 }
 
-.form-text {
+.form__text {
   display: block;
   margin-top: 0.3rem;
   color: #888;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
 select,
 textarea {
   display: block;
@@ -329,9 +335,10 @@ textarea {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
+  border-radius: 0.3rem;
 }
 
-input[type='submit'],
+input[type="submit"],
 button {
   font: inherit;
 }
@@ -378,18 +385,18 @@ table th {
 
 /* Mobile Styles */
 @media (max-width: 700px) {
-  .hide-sm {
+  .hide__sm {
     display: none;
   }
 
-  .grid-2,
-  .grid-3,
-  .grid-4 {
+  .grid__2,
+  .grid__3,
+  .grid__4 {
     grid-template-columns: 1fr;
   }
 
   /* Text Styles */
-  .x-large {
+  .x__large {
     font-size: 3rem;
   }
 
